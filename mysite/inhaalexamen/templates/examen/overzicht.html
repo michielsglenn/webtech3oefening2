@@ -1,0 +1,11 @@
+<header>overzicht examens</header>
+
+{% if latest_examen_list %}
+    <ul>
+    {% for examen_naam in latest_examen_list %}
+        <li>{{ examen_naam }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>er zijn nog geen examens gepland.</p>
+{% endif %}
